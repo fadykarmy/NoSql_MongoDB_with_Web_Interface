@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Patient Data</title>
+</head>
+<body>
+    <h1>Create Patient Data</h1>
+    <form method="POST" action="/create_patient">
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required><br><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+        <label for="sex">Sex:</label>
+        <input type="text" id="sex" name="sex" required><br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        <label for="continent">Continent:</label>
+        <input type="text" id="continent" name="continent" required><br><br>
+        <label for="hemisphere">Hemisphere:</label>
+        <input type="text" id="hemisphere" name="hemisphere" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

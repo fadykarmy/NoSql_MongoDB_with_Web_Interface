@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Health Data</title>
+</head>
+<body>
+    <h1>Add Health Data</h1>
+    <form method="POST" action="/create_health">
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required><br><br>
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="text" id="cholesterol" name="cholesterol" required><br><br>
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="text" id="blood_pressure" name="blood_pressure" required><br><br>
+        <label for="heart_rate">Heart Rate:</label>
+        <input type="text" id="heart_rate" name="heart_rate" required><br><br>
+        <label for="bmi">BMI:</label>
+        <input type="text" id="bmi" name="bmi" required><br><br>
+        <label for="triglycerides">Triglycerides:</label>
+        <input type="text" id="triglycerides" name="triglycerides" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Health Data</title>
+</head>
+<body>
+    <h1>Health Data</h1>
+    <form action="/read_health" method="GET">
+        <input type="text" name="query" placeholder="Search by Patient ID...">
+        <button type="submit">Search</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <table>
+        <thead>
+            <tr>
+                <th>Patient ID</th>
+                <th>Cholesterol</th>
+                <th>Blood Pressure</th>
+                <th>Heart Rate</th>
+                <th>BMI</th>
+                <th>Triglycerides</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in health_data %}
+            <tr>
+                <td>{{ data['Patient ID'] }}</td>
+                <td>{{ data['Cholesterol'] }}</td>
+                <td>{{ data['Blood Pressure'] }}</td>
+                <td>{{ data['Heart Rate'] }}</td>
+                <td>{{ data['BMI'] }}</td>
+                <td>{{ data['Triglycerides'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Management</title>
+</head>
+<body>
+    <h1>Health Data Management</h1>
+    
+    <!-- Create Health Data Form -->
+    <h2>Create Health Data</h2>
+    <form id="createHealthForm" method="POST" action="/health/">
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required><br><br>
+        <label for="data">Health Data:</label><br>
+        <textarea id="data" name="data" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Create Health Data</button>
+    </form>
+    
+    <!-- Read Health Data Form -->
+    <h2>Read Health Data</h2>
+    <form id="readHealthForm" method="GET" action="/health/">
+        <label for="patient_id_read">Patient ID:</label>
+        <input type="text" id="patient_id_read" name="patient_id" required><br><br>
+        <button type="submit">Read Health Data</button>
+    </form>
+    
+    <!-- Update Health Data Form -->
+    <h2>Update Health Data</h2>
+    <form id="updateHealthForm" method="PUT" action="/health/">
+        <label for="patient_id_update">Patient ID:</label>
+        <input type="text" id="patient_id_update" name="patient_id" required><br><br>
+        <label for="updated_data">Updated Health Data:</label><br>
+        <textarea id="updated_data" name="updated_data" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Update Health Data</button>
+    </form>
+    
+    <!-- Delete Health Data Form -->
+    <h2>Delete Health Data</h2>
+    <form id="deleteHealthForm" method="DELETE" action="/health/">
+        <label for="patient_id_delete">Patient ID:</label>
+        <input type="text" id="patient_id_delete" name="patient_id" required><br><br>
+        <button type="submit">Delete Health Data</button>
+    </form>
+</body>
+</html>
